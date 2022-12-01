@@ -1,0 +1,40 @@
+
+    if(stream == "5"):
+        while (dictionary_stream["Devops"] < 5) :
+            Devops.append(trainee)
+            dictionary_stream = {"Devops": len(Devops)}
+            msg = trainee + " is enrolled in DevOps Stream "
+
+    elif(stream == "1"):
+        if (len(Devs) < 5):
+            Devs.append(trainee)
+            msg = trainee + " is enrolled in Software Development Stream "
+        else:
+            msg = "Software Development Stream is full.."
+    elif (stream == "2"):
+        if (len(Aws) < 5):
+            Aws.append(trainee)
+            msg = trainee + " is enrolled in Aws Stream "
+        else:
+            msg = "Aws Stream is full.."
+    elif (stream == "3"):
+            if (len(DataEng) < 5):
+                DataEng.append(trainee)
+                print(len(DataEng))
+                msg = trainee + " is enrolled in Data Engineering Stream "
+            else:
+                msg = "Data Engineering Stream is full.."
+    else:
+        if (len(TechOps) < 5):
+            TechOps.append(trainee)
+            msg = trainee + " is enrolled in Techops Stream "
+
+        else:
+            msg="TechOps Stream is full.."
+
+    return print(msg)
+
+def removeTrainee(stream,trainee):
+    return print("Trainee has drop the class")
+
+
